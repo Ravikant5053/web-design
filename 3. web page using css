@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Web Page</title>
+    <style>
+        /* Set different font and text styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-family: 'Georgia', serif;
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Set a background image for the page */
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+        }
+
+        /* Set a background image for a single element on the page */
+        .highlight-box {
+            background-image: url('highlight-background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Define styles for links */
+        a {
+            color: #e44d26;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #333;
+        }
+
+        /* Working with layers */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        /* Adding a customized cursor */
+        .custom-cursor {
+            cursor: url('custom-cursor.png'), auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Working with layers -->
+    <div class="overlay"></div>
+
+    <h1>Welcome to Styled Web Page</h1>
+
+    <!-- Adding a customized cursor -->
+    <div class="custom-cursor">
+        <p>This is a paragraph with a <a href="#" target="_blank">link</a>.</p>
+    </div>
+
+    <!-- Set a background image for a single element on the page -->
+    <div class="highlight-box">
+        <p>This element has a background image.</p>
+    </div>
+
+</body>
+</html>

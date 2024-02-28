@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalog - Online Book Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .catalog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .book-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .book-card:hover {
+            transform: scale(1.05);
+        }
+        .book-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .book-details {
+            padding: 15px;
+        }
+        .book-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .book-author {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .book-price {
+            font-size: 16px;
+            color: #e44d26;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to our Online Book Store Catalog</h1>
+
+    <div class="catalog-container">
+        <!-- Book 1 -->
+        <div class="book-card">
+            <img class="book-image" src="book1.jpg" alt="Book 1" />
+            <div class="book-details">
+                <div class="book-title">The Adventures of Tom Sawyer</div>
+                <div class="book-author">Mark Twain</div>
+                <div class="book-price">$15.99</div>
+            </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-card">
+            <img class="book-image" src="book2.jpg" alt="Book 2" />
+            <div class="book-details">
+                <div class="book-title">Adventures of Huckleberry Finn</div>
+                <div class="book-author">Mark Twain</div>
+                <div class="book-price">$19.99</div>
+            </div>
+        </div>
+
+        <!-- Add more book cards as needed -->
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Online Book Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .cart-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .cart-item {
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .book-details {
+            flex: 2;
+            margin-right: 10px;
+        }
+        .book-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .book-author {
+            font-size: 14px;
+            color: #555;
+        }
+        .book-price {
+            font-size: 16px;
+            color: #e44d26;
+            font-weight: bold;
+        }
+        .remove-button {
+            background-color: #e44d26;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Shopping Cart</h1>
+
+    <div class="cart-container">
+        <div class="cart-item">
+            <div class="book-details">
+                <div class="book-title">The Adventures of Tom Sawyer</div>
+                <div class="book-author">Mark Twain</div>
+                <div class="book-price">$15.99</div>
+            </div>
+            <button class="remove-button">Remove</button>
+        </div>
+
+        <!-- Add more cart items as needed -->
+
+        <div class="cart-item">
+            <div class="book-details">
+                <div class="book-title">Adventures of Huckleberry Finn</div>
+                <div class="book-author">Mark Twain</div>
+                <div class="book-price">$19.99</div>
+            </div>
+            <button class="remove-button">Remove</button>
+        </div>
+    </div>
+
+</body>
+</html>
